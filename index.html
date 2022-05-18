@@ -66,15 +66,26 @@ TedX
   <p class="title2"> How Are Websockets Used? </p>
   <div class="list">
     <ul>
-      <li>Created alongside The Websockets API made by W3C (an internet organization led by Tim Berners-Lee, the “inventory of the World Wide Web”)</li>
-      <li>When the web was new, people used HTTP long polling</li>
+      <li>Clients send messages to the server and server can do things with it and send it back to the clients</li>
+      <li>A websocket connection first has to be established between the user and the server</li>
       <ul>
-        <li>HTTP long polling - a half duplex system of call and response</li>
-        <li>A new request/response call had to be made every time the client wants to communicate with the server</li>
+        <li>This is known as a handshake request from the client and a corresponding handshake response from the server</li>
       </ul>
+      <li>Uses info stored in the JSON file to update the site’s html in real time</li>
+      <ul>
+        <li>Ex: updating how many users are on a website at once</li>
+      </ul>
+      <li>Users can be registered and deregistered based on if the websocket connection is open or not</li>
     </ul>
   <div>
-
-
-  <!-- More Resources -->
-  <a href="https://github.com/ywu20/ted/tree/canvas">Here's</a> the link to our demo.
+<br>
+  <p class="title2"> More Resources </p>
+  <div class="list">
+    <ul>
+      <li><a href="https://github.com/ywu20/ted/tree/canvas">Our Demo!</a> (Make sure you are on the canvas branch.)</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">Websockets API</a></li>
+      <li><a href="https://websockets.spec.whatwg.org/">W3C Documentation</a></li>
+      <li><a href="https://websockets.readthedocs.io/en/stable/">Python Websockets Documentation</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications">JavaScript/Mozilla Documentation</a></li>
+    </ul>
+  </div>
